@@ -1,6 +1,10 @@
 # MechaCar_Statistical_Analysis
+## Overview of the project
+After completing his project, Jeremy started his new work and his senior management approached him for a special project.MechaCar, the new prototype of AutosRUs has a production problem that blocks the progress of the manufacturing team. They want Jeremy and his team to analyze production data for information that could help the manufacturing team.
 
 ## Linear Regression to Predict MPG
+
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 ----Vehicle weight, spoiler_angle & AWD provided a non-random amount of variance. The two variables that had the most amount of random variance are ground_clearance and vehicle_length
