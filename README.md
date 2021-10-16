@@ -22,5 +22,16 @@
 
 -----According to the summary output, the r-squared value is 0.71, which predicts that approximatley 71% of all mpg predictions will be correct when using this linear model. In addition, the p-value of the linear model is 5.35e-11 (last line of the above picture in the F-statistic results), which is smaller (94.65%) than the desired significance level of 0.05 (95%).
 
+## Summary Statistics on Suspension Coils
+
+## T-Tests on Suspension Coils
+
+## Study Design: MechaCar vs Competition
+
+    What metric or metrics are you going to test?
+    What is the null hypothesis or alternative hypothesis?
+    What statistical test would you use to test the hypothesis? And why?
+    What data is needed to run the statistical test?
+
 
 
