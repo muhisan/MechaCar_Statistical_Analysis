@@ -65,7 +65,7 @@ Lot 3 t test results
  
  * The p-values for all test results are not low enough to reject the null hypothesis.
  * In the 3 first test the sample mean and the population mean of 1500 are statistically similar
-   However, they are different in the last lot(lot3). Therefore those results shows that there mus be
+   However, they are different in the last lot(lot3). Therefore those results shows that there must be
    an issue in the lot 3 production process that Jeremy and the team should try to find out and correct it.
    
 
@@ -78,17 +78,15 @@ Lot 3 t test results
     
     What is the null hypothesis or alternative hypothesis?
     
-    * H0: is generally the hypothesis that can be explained by random chance and that
-      the probability of flipping heads is equal to 0.5
+    * H0: The mpg dataset of MechaCar is identical to the mpg dataset of the competition.
     
-    * Ha: is generally the hypothesis that is influenced by non-random events and the the probability 
-      of flipping heads different to 0.5
+    * Ha: The mpg dataset of MechaCar is different to the mpg dataset of the competition. 
     
     What statistical test would you use to test the hypothesis? And why?
-    we would do t-test based on the competitor vehicle data.  
+    we would do t-test to comparer MechaCar prototypes data to the competitor's vehicles data.  
     
     What data is needed to run the statistical test?
-    we would use the competitor vehicle data such as fuel efficiency , actual price,etc.
+    Data such as fuel efficiency , actual price, age, mileage are need to run the statistical test
     
 
 
