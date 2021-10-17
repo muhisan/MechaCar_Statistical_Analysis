@@ -4,38 +4,92 @@ After completing his project, Jeremy started his new work and his senior managem
 
 ## Linear Regression to Predict MPG
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Linear_Regression](https://github.com/muhisan/MechaCar_Statistical_Analysis/blob/main/Resources(challenge)/Linear%20Regression%20to%20Predict%20MPG.png)
 
-* Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-----Vehicle weight, spoiler_angle & AWD provided a non-random amount of variance. The two variables that had the most amount of random variance are ground_clearance and vehicle_length
+    Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+    
+    * The intercept vehicle_length, and ground_clearance coeeficients provide a non-random amount
+      of variance to the mpg values in the dataset since their p-values are less than zero of 2.6x10-12 and 5.21x10-8  
+      respectively.
+ 
+    Is the slope of the linear model considered to be zero? Why or why not?
+    
+    * The slope of the linear model is not considered to be zero since the p-value is less than zero(5.35x10-11). When the P-value 
+      is less than the significance level ,the null hypothesis is rejected.
+      
+    Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not
+    
+    * The r-squared value is the main indicator that the linear model predicts the mpg of the MechaCar or not.
+      In our case, r-squared value is 0.7149 which means that this model predicts the mpg of the MechaCar effectively at
+      71%.
 
-----The vehicle length, and vehicle ground clearance are statistically likely to provide non-random amounts of variance to the model. That is to say, the vehicle length and vehicle ground clearance have a significant impact on miles per gallon on the MechaCar prototype. Conversely, the vehicle weight, spoiler angle, and All Wheel Drive (AWD) have p-Values that indicate a random amount of variance with the dataset.
-
-* Is the slope of the linear model considered to be zero? Why or why not?
-----Our slope is not zero just be looking at the p-value, which is less than 0.05.
-
----The p-Value for this model, p-Value: 5.35e-11, is much smaller than the assumed significance level of 0.05%. This indicates there is sufficient evidence to reject our null hypothesis, which further indcates that the slope of this linear model is not zero.
-
-----The slope of the linear model is not considered to be zero because the p-value is less than 0.05.
-
-* Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? 
-
-----Our R-squared value is 71%, which means roughly ~71% of the time the model will predict mpg values correctly. There are probably other factors that were not captured in the datasaet that contribute to the mpg variability of the MechaCar prototypes.
-
------This linear model has an r-squared value of 0.7149, which means that approximately 71% of all mpg predictions will be determined by this model. Relatively speaking, his multiple regression model does predict mpg of MechaCar prototypes effectively.
-
------According to the summary output, the r-squared value is 0.71, which predicts that approximatley 71% of all mpg predictions will be correct when using this linear model. In addition, the p-value of the linear model is 5.35e-11 (last line of the above picture in the F-statistic results), which is smaller (94.65%) than the desired significance level of 0.05 (95%).
 
 ## Summary Statistics on Suspension Coils
+* total summary table
+
+![total_summary](https://github.com/muhisan/MechaCar_Statistical_Analysis/blob/main/Resources(challenge)/total_summary.png)
+
+* lots summary table
+
+![lot_summary](https://github.com/muhisan/MechaCar_Statistical_Analysis/blob/main/Resources(challenge)/lot_summary.png)
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 
+100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total 
+and each lot individually? Why or why not?
+
+In the total summary table below, we can see that the variance of 62 PSI does meet the design specifications. 
+Also if we consider each lot individually in second table, we realize that lot 1 and lot 2 meet the design specification but 
+lot 3 is way over the accepted design specification for all manufacturing at a variance of 170,28. In conclusion, jeremy and his team
+should focus more on the 2 first lots and discard or conduct more studies on that lot 3.
+
 
 ## T-Tests on Suspension Coils
+
+All lots t test results 
+
+![test_all_Lots](https://github.com/muhisan/MechaCar_Statistical_Analysis/blob/main/Resources(challenge)/test%20all%20lots.png)
+
+Lot 1 t test results
+
+![test_Lot_1](https://github.com/muhisan/MechaCar_Statistical_Analysis/blob/main/Resources(challenge)/test%20Lot%201.png)
+
+Lot 2 t test results
+
+![test_Lot_2](https://github.com/muhisan/MechaCar_Statistical_Analysis/blob/main/Resources(challenge)/test%20Lot%202.png)
+
+Lot 3 t test results
+
+![test_Lot_3](https://github.com/muhisan/MechaCar_Statistical_Analysis/blob/main/Resources(challenge)/test%20Lot3.png)
+ 
+ conclusions:
+ 
+ * The p-values for all test results are not low enough to reject the null hypothesis.
+ * In the 3 first test the sample mean and the population mean of 1500 are statistically similar
+   However, they are different in the last lot(lot3). Therefore those results shows that there mus be
+   an issue in the lot 3 production process that Jeremy and the team should try to find out and correct it.
+   
 
 ## Study Design: MechaCar vs Competition
 
     What metric or metrics are you going to test?
+    
+    * all kind of costs (price, maintenance cost,..)
+    * city and highway fuel efficiency
+    
     What is the null hypothesis or alternative hypothesis?
+    
+    * H0: is generally the hypothesis that can be explained by random chance and that
+      the probability of flipping heads is equal to 0.5
+    
+    * Ha: is generally the hypothesis that is influenced by non-random events and the the probability 
+      of flipping heads different to 0.5
+    
     What statistical test would you use to test the hypothesis? And why?
+    we would do t-test based on the competitor vehicle data.  
+    
     What data is needed to run the statistical test?
+    we would use the competitor vehicle data such as fuel efficiency , actual price,etc.
+    
 
 
 
